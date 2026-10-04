@@ -1,0 +1,78 @@
+:root{
+  --help-bg: #f7fafc;
+  --help-card: #ffffff;
+  --help-border: #e2e8f0;
+  --help-accent: #2563eb;
+  --help-text: #0f172a;
+  --help-muted: #64748b;
+  --help-radius: 10px;
+}
+
+.Help_app-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--help-bg);
+  padding: 32px;
+  font-family: Arial, sans-serif;
+}
+
+.Help_card{
+  max-width: 700px;
+  width: 100%;
+  background: var(--help-card);
+  border: 1px solid var(--help-border);
+  border-radius: var(--help-radius);
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.Help_title{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.Help_description{
+  color: var(--help-muted);
+  margin-bottom: 20px;
+}
+
+.Help_steps{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Help_step{
+  display: flex;
+  gap: 12px;
+  border: 1px dashed var(--help-border);
+  padding: 14px;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.Help_stepNumber{
+  min-width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(37,99,235,0.08);
+  color: var(--help-accent);
+  border: 1px solid rgba(37,99,235,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.Help_label{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.Help_hint{
+  font-size: 16px;
+  color: var(--help-muted);
+}

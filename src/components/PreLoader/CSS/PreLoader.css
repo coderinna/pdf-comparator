@@ -1,0 +1,26 @@
+
+
+/* --------- ***************************************************************************************/
+/* preloader - ALKULATAUS  */
+/* --------- ****************************************************************************************/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--dark-blue);
+    background-image: url(./pre.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #preloader-none {
+   /* opacity: 0; */
+  }
+  
+  #no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }

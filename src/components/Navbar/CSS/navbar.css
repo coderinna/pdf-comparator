@@ -1,0 +1,143 @@
+/* -------------------------
+   NAVBAR – RED/BLACK/WHITE
+------------------------- */
+
+.sticky {
+  background-color: #d3d3d3e7 !important;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+.logo_font {
+  color: #ff0000 !important; /* punainen */
+  font-size: 5vh !important;
+}
+
+.navbar {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  background-color: #e7e7e7fb !important; /* musta */
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 2rem !important;
+  color: #000000 !important;
+  font-size: 1.2rem !important;
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ---------- TOGGLER ---------- */
+
+.navbar-toggler {
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-toggler span {
+  display: block !important;
+  background-color: #ffffff !important; /* valkoinen viiva */
+  height: 4px !important;
+  width: 27px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  transform: rotate(0deg) !important;
+  transition: 0.35s ease-in-out !important;
+}
+
+/* X-tilaan (avattu menu) */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  background-color: #ff0000 !important; /* punainen */
+  transform: rotate(135deg) !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px !important;
+  visibility: hidden !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  background-color: #ff0000 !important; /* punainen */
+  transform: rotate(-135deg) !important;
+}
+
+/* ---------- LINKS ---------- */
+
+.navbar-nav .nav-item a::after {
+  display: none !important;
+}
+
+.navbar-brand {
+  color: #ffffff !important; /* valkoinen */
+}
+
+.logo {
+  width: auto !important;
+  height: 4em !important;
+}
+
+.navbar-nav .nav-link {
+  color: #222222 !important; /* valkoinen tekstiväri */
+  font-size: 20px;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.nav-link {
+  padding: 0.8rem 1rem !important;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover-hehku punaiseksi */
+.navbar-nav .nav-item a:hover {
+  color: #424242 !important; /* valkoinen tekstiväri */
+  text-shadow: 
+    0 0 10px #fff,
+    0 0 20px #fff;
+  transition: all 0.3s ease-out 0s;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 767px) {
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+
+  .navbar {
+    padding: 1rem 2rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  .logo {
+    height: 6vh !important;
+  }
+
+  .logo_font {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-toggler {
+    position: absolute !important;
+    margin-left: 200px !important;
+  }
+}

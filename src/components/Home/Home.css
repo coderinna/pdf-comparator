@@ -1,0 +1,41 @@
+.app-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.section {
+  background-color: #f5f5f5; /* neutraali vaalea harmaa tausta */
+  border-radius: 12px;
+  border: 1px solid #d1d1d1; /* kevyt harmaa reuna */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* hieno varjo */
+  margin-top: 20px;
+  overflow: hidden; 
+}
+
+.section-title {
+  background-color: #e0e0e0; /* neutraali tummempi harmaa palkki otsikolle */
+  color: #333333; /* tummanharmaa teksti */
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 12px 20px;
+  margin: 0;
+  border-bottom: 1px solid #c0c0c0; /* kevyt raja otsikon ja sisällön väliin */
+}
+
+.section-content {
+  padding: 20px; /* sisältöalue */
+}
+
+
+.section h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.app-title {
+  font-size: 2rem;
+}
